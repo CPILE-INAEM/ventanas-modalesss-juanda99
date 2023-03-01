@@ -15,4 +15,12 @@ const openModal = function () {
   overlay.classList.remove('hidden')
 }
 
+const closeModal = function () {
+  modal.classList.add('hidden')
+  overlay.classList.add('hidden')
+}
+
 btnShowModal.forEach((btn) => btn.addEventListener('click', openModal))
+
+overlay.addEventListener('click', closeModal)
+btnCloseModal.addEventListener('click', closeModal)
