@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "scp -P 22123 -r ./*.{html,js,css} juanda@certweb.infenlaces.com:/home/juanda/sitioweb/ventanas-modales"
   },
   "author": "",
   "license": "ISC",
